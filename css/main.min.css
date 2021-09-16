@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  max-width: 1900px;
+}
+
+header {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  header {
+    display: grid;
+    grid-template-columns: 300px 2fr 1fr;
+    grid-template-rows: 300px auto auto;
+    grid-template-areas: "logo title ..." "description description description";
+  }
+}
+header .header__title {
+  width: 80%;
+  margin: 5px auto;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  header .header__title {
+    grid-area: title;
+    justify-self: center;
+    align-self: center;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 15px;
+    text-decoration: underline;
+  }
+}
+header .header__title .title__h1 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+@media (min-width: 640px) {
+  header .header__title .title__h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  header .header__title .title__h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  header .header__title .title__h1 {
+    font-size: 60px;
+  }
+}
+header .header__logo {
+  width: 60%;
+  margin: 10px auto;
+}
+@media (min-width: 640px) {
+  header .header__logo {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  header .header__logo {
+    grid-area: logo;
+    overflow: hidden;
+    width: 80%;
+    margin: 20px;
+    margin-left: 30px;
+  }
+}
+header .header__logo .header__logo-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+header .header__description {
+  width: 95%;
+  margin: 20px auto;
+}
+@media (min-width: 1024px) {
+  header .header__description {
+    grid-area: description;
+    width: 95%;
+  }
+}
+@media (min-width: 1200px) {
+  header .header__description {
+    width: 80%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1400px) {
+  header .header__description {
+    width: 70%;
+  }
+}
+header .header__description .description__h2 {
+  margin-bottom: 10px;
+}
+@media (min-width: 640px) {
+  header .header__description .description__h2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  header .header__description .description__h2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  header .header__description .description__h2 {
+    font-size: 40px;
+  }
+}
+header .header__description .description__p {
+  font-family: "Montserrat", sans-serif;
+  text-indent: 15px;
+}
+@media (min-width: 640px) {
+  header .header__description .description__p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  header .header__description .description__p {
+    width: 100%;
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  header .header__description .description__p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  header .header__description .description__p {
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=main.min.css.map */
