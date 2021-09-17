@@ -197,6 +197,13 @@ main .container {
         flex-wrap: wrap;
   }
 }
+@media (min-width: 1200px) {
+  main .container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 main .container article {
   width: 100%;
 }
@@ -211,24 +218,100 @@ main .container article {
     margin-bottom: 10px;
   }
 }
+@media (min-width: 1200px) {
+  main .container article {
+    width: 30%;
+  }
+}
 main .container article .article__photo {
   width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+main .container article .article__photo .photo__h1 {
+  display: none;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
 }
 @media (min-width: 1024px) {
   main .container article .article__photo {
-    width: 40%;
+    width: 30%;
+    height: 350px;
     justify-self: center;
     -ms-flex-item-align: center;
         align-self: center;
   }
 }
-main .container article .article__photo .article__img {
+@media (min-width: 1200px) {
+  main .container article .article__photo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  main .container article .article__photo--first {
+    background-image: url("/asstes/swinica.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  main .container article .article__photo--second {
+    background-image: url("/asstes/koscielec2.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  main .container article .article__photo--third {
+    background-image: url("/asstes/sniezka.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  main .container article .article__photo--fourth {
+    background-image: url("/asstes/szrenica.jpg");
+  }
+}
+main .container article .article__img {
   width: 100%;
   height: 200px;
 }
 @media (min-width: 640px) {
-  main .container article .article__photo .article__img {
+  main .container article .article__img {
     height: 350px;
+  }
+}
+@media (min-width: 1200px) {
+  main .container article .article__img {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  main .container article .article__photo:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+  }
+  main .container article .article__photo:hover .photo__h1 {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 0 auto;
+    font-size: 40px;
   }
 }
 main .container article .article__description {
@@ -238,6 +321,11 @@ main .container article .article__description {
 @media (min-width: 1024px) {
   main .container article .article__description {
     width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  main .container article .article__description {
+    display: none;
   }
 }
 main .container article .article__description .description__h3 {
