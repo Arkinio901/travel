@@ -156,6 +156,7 @@ header .header__description .description__p {
   }
   .slider .slider__img {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -175,15 +176,48 @@ main .main__h2 {
     font-size: 35px;
   }
 }
+@media (min-width: 1200px) {
+  main .main__h2 {
+    font-size: 50px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
 main .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 main .container article {
   width: 100%;
 }
+@media (min-width: 1024px) {
+  main .container article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
+}
 main .container article .article__photo {
   width: 100%;
+}
+@media (min-width: 1024px) {
+  main .container article .article__photo {
+    width: 40%;
+  }
 }
 main .container article .article__photo .article__img {
   width: 100%;
@@ -196,8 +230,12 @@ main .container article .article__photo .article__img {
 }
 main .container article .article__description {
   width: 100%;
-  margin: 10px auto;
   background-color: #ddd;
+}
+@media (min-width: 1024px) {
+  main .container article .article__description {
+    width: 50%;
+  }
 }
 main .container article .article__description .description__h3 {
   text-align: center;
@@ -209,6 +247,19 @@ main .container article .article__description .description__h3 {
     font-size: 25px;
   }
 }
+@media (min-width: 1200px) {
+  main .container article .article__description .description__h3 {
+    font-size: 35px;
+  }
+}
+main .container article .article__description .description__line {
+  width: 60%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 2px solid red;
+  margin-bottom: 10px;
+}
 main .container article .article__description .description__p {
   text-indent: 15px;
   padding: 0 5px;
@@ -216,5 +267,25 @@ main .container article .article__description .description__p {
 @media (min-width: 640px) {
   main .container article .article__description .description__p {
     font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  main .container article .article__description .description__p {
+    text-indent: 30px;
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #444;
+  color: white;
+}
+@media (min-width: 1200px) {
+  footer {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.min.css.map */
