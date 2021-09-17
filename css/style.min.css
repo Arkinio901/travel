@@ -217,6 +217,9 @@ main .container article .article__photo {
 @media (min-width: 1024px) {
   main .container article .article__photo {
     width: 40%;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 main .container article .article__photo .article__img {
@@ -274,6 +277,7 @@ main .container article .article__description .description__p {
     text-indent: 30px;
     font-size: 25px;
     font-family: "Playfair Display", serif;
+    margin-bottom: 20px;
   }
 }
 

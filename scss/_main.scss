@@ -112,6 +112,8 @@ main {
 
     @media(min-width: 1024px) {
      width: 40%;
+     justify-self: center;
+     align-self: center;
     }
 
     .article__img {
@@ -170,6 +172,8 @@ main {
       text-indent: 30px;
       font-size: 25px;
       font-family: $playfair;
+      margin-bottom: 20px;
+
 
      }
     }
