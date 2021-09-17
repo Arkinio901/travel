@@ -143,4 +143,58 @@ header .header__description .description__p {
   header .header__description .description__p {
     font-size: 25px;
   }
-}/*# sourceMappingURL=main.min.css.map */
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+main .main__slider {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+}
+main .main__slider .slider__img {
+  width: 80%;
+  height: 70%;
+  position: absolute;
+}
+main .main__slider .slider__img:nth-child(2) {
+  opacity: 0;
+  -webkit-animation: photo 20s 2s linear infinite;
+          animation: photo 20s 2s linear infinite;
+}
+@-webkit-keyframes photo {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes photo {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=style.min.css.map */
