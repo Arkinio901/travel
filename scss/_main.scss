@@ -153,19 +153,17 @@ main {
      width: 100%;
 
     }
-
-
    }
 
    .article__photo--first {
     @media(min-width: 1200px) {
-     background-image: url("..//asstes/sniezka.jpg");
+     background-image: url("./asstes/sniezka.jpg");
     }
    }
 
    .article__photo--second {
     @media(min-width: 1200px) {
-     background-image: url("..//asstes/koscielec2.jpg");
+     background-image: url("./asstes/koscielec2.jpg");
     }
 
 
@@ -173,15 +171,16 @@ main {
 
    .article__photo--third {
     @media(min-width:1200px) {
-     background-image: url("..//asstes/sniezka.jpg");
+     background-image: url("./asstes/sniezka.jpg");
     }
    }
 
    .article__photo--fourth {
     @media(min-width:1200px) {
-     background-image: url("..//asstes/szrenica.jpg");
+     background-image: url("./asstes/szrenica.jpg");
     }
    }
+
 
    .article__img {
     width: 100%;
