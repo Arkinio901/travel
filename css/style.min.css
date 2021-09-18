@@ -206,6 +206,7 @@ main .container {
 }
 main .container article {
   width: 100%;
+  margin-top: 20px;
 }
 @media (min-width: 1024px) {
   main .container article {
@@ -287,6 +288,7 @@ main .container article .article__img {
 }
 main .container article .article__description {
   width: 100%;
+  padding-bottom: 10px;
   background-color: #ddd;
 }
 @media (min-width: 1024px) {

@@ -105,6 +105,7 @@ main {
 
   article {
    width: 100%;
+   margin-top: 20px;
 
 
 
@@ -116,7 +117,14 @@ main {
 
    @media(min-width: 1200px) {
     width: 30%;
+
+
    }
+
+   // .article__photo {
+   //  display: none;
+
+   // }
 
    .article__photo {
     width: 100%;
@@ -124,43 +132,60 @@ main {
     display: flex;
     transition-duration: 2s; //zmiana na img zobaczyć zmianę
     justify-content: space-evenly;
+    position: relative;
 
 
     .photo__h1 {
      display: none;
-     transition-duration: 3s;
-     z-index: 99;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+     // transition-duration: 3s;
+     // z-index: 99;
+     // position: absolute;
+     // top: 50%;
+     // left: 50%;
+     // transform: translate(-50%, -50%);
     }
 
     @media(min-width: 1024px) {
-     width: 30%;
+     width: 40%;
      height: 350px;
      justify-self: center;
      align-self: center;
-     // background-image: url("/asstes/swinica.jpg");
-     // background-size: cover;
-     // background-repeat: no-repeat;
-     // overflow: hidden;
+
     }
 
     @media(min-width:1200px) {
-     // background-image: url("/asstes/swinica.jpg");
-     background-size: cover;
-     background-repeat: no-repeat;
-     overflow: hidden;
-     justify-content: flex-start;
-     align-self: flex-start;
+
      width: 100%;
 
     }
    }
 
 
+   .article__photo:hover {
+    @media(min-width:1200px) {
+     // transform: scale(1.2);
+     cursor: pointer;
 
+     .article__img {
+      transform: scale(1.2);
+
+     }
+
+     .photo__h1 {
+      display: block;
+      position: absolute;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      justify-self: center;
+      align-self: center;
+      margin: 0 auto;
+      font-size: 40px;
+      z-index: 999; //widoczny napis opisu zdjęcia bez tego nie widać napisu bo jest schowany
+
+
+     }
+    }
+   }
 
    .article__img {
     width: 100%;
@@ -174,31 +199,9 @@ main {
 
    }
 
-
-
-
-   .article__photo:hover {
-    @media(min-width:1200px) {
-     transform: scale(1.2);
-     cursor: pointer;
-
-     .photo__h1 {
-      display: block;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      justify-self: center;
-      align-self: center;
-      margin: 0 auto;
-      font-size: 40px;
-
-
-     }
-    }
-   }
-
    .article__description {
     width: 100%;
+    padding-bottom: 10px;
 
     background-color: #ddd;
 
