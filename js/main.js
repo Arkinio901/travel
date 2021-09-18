@@ -1,6 +1,5 @@
 document.querySelector('.article__photo').addEventListener("click", function () {
  document.querySelector('.modal-wrap').classList.add('active');
- 
  // document.querySelector('.article').classList.add('blur')
 })
 
