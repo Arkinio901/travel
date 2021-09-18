@@ -234,21 +234,14 @@ main .container article .article__photo {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  position: relative;
 }
 main .container article .article__photo .photo__h1 {
   display: none;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
-  z-index: 99;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 @media (min-width: 1024px) {
   main .container article .article__photo {
-    width: 30%;
+    width: 40%;
     height: 350px;
     justify-self: center;
     -ms-flex-item-align: center;
@@ -257,15 +250,28 @@ main .container article .article__photo .photo__h1 {
 }
 @media (min-width: 1200px) {
   main .container article .article__photo {
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
     width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  main .container article .article__photo:hover {
+    cursor: pointer;
+  }
+  main .container article .article__photo:hover .article__img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  main .container article .article__photo:hover .photo__h1 {
+    display: block;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 0 auto;
+    font-size: 40px;
+    z-index: 999;
   }
 }
 main .container article .article__img {
@@ -277,24 +283,6 @@ main .container article .article__img {
 @media (min-width: 640px) {
   main .container article .article__img {
     height: 350px;
-  }
-}
-@media (min-width: 1200px) {
-  main .container article .article__photo:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    cursor: pointer;
-  }
-  main .container article .article__photo:hover .photo__h1 {
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    justify-self: center;
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin: 0 auto;
-    font-size: 40px;
   }
 }
 main .container article .article__description {
